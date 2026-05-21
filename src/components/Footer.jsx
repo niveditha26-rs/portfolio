@@ -2,19 +2,19 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white px-6 py-10">
+    <footer className="bg-[#efefef] text-black px-6 py-12 border-t border-gray-300">
 
       {/* MAIN CONTAINER */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="max-w-7xl mx-auto flex flex-col items-center justify-center text-center gap-8">
 
-        {/* LEFT SIDE */}
-        <div className="text-center md:text-left">
+        {/* NAME */}
+        <div>
 
-          <h1 className="text-3xl font-black uppercase tracking-wide">
+          <h1 className="text-3xl md:text-4xl font-black uppercase tracking-widest">
             Niveditha R S
           </h1>
 
-          <p className="text-gray-400 mt-3 max-w-md leading-7">
+          <p className="text-gray-600 mt-4 max-w-2xl leading-8 text-sm md:text-base">
             Frontend Developer passionate about building modern,
             responsive and user-friendly websites using React
             and Tailwind CSS.
@@ -22,9 +22,8 @@ function Footer() {
 
         </div>
 
-
-        {/* RIGHT SIDE - SOCIAL LINKS */}
-        <div className="flex items-center gap-5">
+        {/* SOCIAL ICONS */}
+        <div className="flex items-center justify-center gap-5">
 
           {/* LINKEDIN */}
           <a
@@ -56,49 +55,25 @@ function Footer() {
 
         </div>
 
-      </div>
+        {/* BOTTOM TEXT */}
+        <div className="w-full border-t border-gray-300 pt-6">
 
-      {/* BOTTOM TEXT */}
-      <div className="border-t border-gray-800 mt-10 pt-6 text-center">
+          <p className="text-gray-600 text-sm md:text-base">
+            © 2026 Niveditha R S. All Rights Reserved.
+          </p>
 
-        <p className="text-gray-400 text-sm">
-          © 2026 Niveditha R S. All Rights Reserved.
-        </p>
+        </div>
 
       </div>
 
       {/* CUSTOM CSS */}
       <style>
         {`
-          .footer-link {
-            position: relative;
-            transition: 0.3s;
-          }
-
-          .footer-link:hover {
-            color: #f5b932;
-          }
-
-          .footer-link::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 0%;
-            height: 2px;
-            background: #f5b932;
-            transition: 0.3s;
-          }
-
-          .footer-link:hover::after {
-            width: 100%;
-          }
-
           .social-icon {
-            width: 55px;
-            height: 55px;
-            background: #f5b932;
-            color: black;
+            width: 58px;
+            height: 58px;
+            background: black;
+            color: white;
             border-radius: 9999px;
             display: flex;
             align-items: center;
@@ -108,14 +83,15 @@ function Footer() {
           }
 
           .social-icon:hover {
-            background: white;
-            transform: translateY(-5px);
+            background: #f5b932;
+            color: black;
+            transform: translateY(-6px) scale(1.05);
           }
 
           @media (max-width: 768px) {
             .social-icon {
-              width: 50px;
-              height: 50px;
+              width: 52px;
+              height: 52px;
               font-size: 22px;
             }
           }
