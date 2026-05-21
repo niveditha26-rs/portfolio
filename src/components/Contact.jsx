@@ -21,7 +21,7 @@ function Contact() {
 
         </div>
 
-        {/* CONTACT SECTION */}
+        {/* CONTACT SECTION *
         <div className="grid md:grid-cols-2 gap-16 items-start">
 
           {/* LEFT SIDE */}
@@ -40,6 +40,7 @@ function Contact() {
             {/* CONTACT INFO */}
             <div className="space-y-8">
 
+              {/* EMAIL */}
               <div className="contact-box">
 
                 <div className="contact-icon">
@@ -52,12 +53,13 @@ function Contact() {
                   </h3>
 
                   <p className="text-gray-600">
-                    nivedithars@example.com
+                    nivedithar.s611@gmail.com
                   </p>
                 </div>
 
               </div>
 
+              {/* PHONE */}
               <div className="contact-box">
 
                 <div className="contact-icon">
@@ -76,6 +78,7 @@ function Contact() {
 
               </div>
 
+              {/* LOCATION */}
               <div className="contact-box">
 
                 <div className="contact-icon">
@@ -88,8 +91,56 @@ function Contact() {
                   </h3>
 
                   <p className="text-gray-600">
-                    Attingal, Thiruvananthapuram, Kerala
+                   Thiruvananthapuram, Kerala
                   </p>
+                </div>
+
+              </div>
+
+              {/* LINKEDIN */}
+              <div className="contact-box">
+
+                <div className="contact-icon">
+                  💼
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-black mb-1">
+                    LinkedIn
+                  </h3>
+
+                  <a
+                    href="https://www.linkedin.com/in/niveditha-r-s-39236936a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-[#f5b932] transition duration-300"
+                  >
+                    linkedin.com/in/your-linkedin-id
+                  </a>
+                </div>
+
+              </div>
+
+              {/* GITHUB */}
+              <div className="contact-box">
+
+                <div className="contact-icon">
+                  💻
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-black mb-1">
+                    GitHub
+                  </h3>
+
+                  <a
+                    href="https://github.com/niveditha26-rs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-[#f5b932] transition duration-300"
+                  >
+                   https://github.com/niveditha26-rs
+                  </a>
                 </div>
 
               </div>
