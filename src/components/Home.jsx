@@ -110,11 +110,7 @@ function Home() {
             }
           }
 
-          /* HI THERE BOUNCE */
-          .animate-bounceText {
-            display: inline-block;
-            animation: bounceText 2s infinite;
-          }
+        
 
           @keyframes bounceText {
             0% {
