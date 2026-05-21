@@ -7,7 +7,7 @@ import Education from "./components/Education";
 import Skill from "./components/Skill";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
         <section id="skill"><Skill /></section>
         <section id="projects"><Projects /></section>
         <section id="contact"><Contact /></section>
+        <section id="Footer"><Footer></Footer></section>
       </div>
     </div>
   );
