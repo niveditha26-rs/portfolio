@@ -83,22 +83,7 @@ function Contact() {
 
               </div>
 
-              {/* LOCATION */}
-              <div className="contact-box">
-
-                <div className="contact-icon">
-                  📍
-                </div>
-
-                <div>
-                  <h3 className="text-lg md:text-xl font-bold text-black mb-1">
-                    Location
-                  </h3>
-
-                  <p className="text-gray-600">
-                    Thiruvananthapuram, Kerala
-                  </p>
-                </div>
+             
 
               </div>
 
@@ -146,6 +131,21 @@ function Contact() {
                   >
                     github.com/niveditha26-rs
                   </a>
+                </div>
+                <div>
+                   {/* LOCATION */}
+              <div className="contact-box">
+
+                <div className="contact-icon">
+                  📍
+                </div>
+                  <h3 className="text-lg md:text-xl font-bold text-black mb-1">
+                    Location
+                  </h3>
+
+                  <p className="text-gray-600">
+                    Thiruvananthapuram, Kerala
+                  </p>
                 </div>
 
               </div>
