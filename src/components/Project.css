@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+
+  background:
+  linear-gradient(rgba(5,10,30,0.88), rgba(20,5,35,0.88)),
+  url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1974&auto=format&fit=crop");
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  color:white;
+  min-height:100vh;
+}
+
+/* PROJECT CONTAINER */
+
+.project{
+  max-width:900px;
+
+  margin:60px auto;
+  padding:45px;
+
+  /* TRANSPARENT GLASS EFFECT */
+  background:rgba(255,255,255,0.06);
+
+  border:1px solid rgba(255,255,255,0.12);
+
+  border-radius:25px;
+
+  backdrop-filter:blur(18px);
+
+  box-shadow:0 10px 35px rgba(0,0,0,0.3);
+
+  animation:fadeIn 1s ease;
+}
+
+/* TITLE */
+
+.title{
+  font-size:34px;
+  font-weight:700;
+
+  margin-bottom:20px;
+
+  text-align:center;
+
+  background:linear-gradient(90deg,#00f5ff,#8b5cf6,#ff3cac);
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* SUB HEADING */
+
+.project h2{
+  font-size:28px;
+  margin-top:25px;
+  margin-bottom:15px;
+}
+
+/* PARAGRAPH */
+
+.project p{
+  font-size:16px;
+  line-height:1.9;
+
+  color:#f1f5f9;
+
+  margin-bottom:12px;
+}
+
+/* BUTTON */
+
+.project button{
+  margin-top:20px;
+
+  padding:12px 28px;
+
+  border:none;
+  border-radius:30px;
+
+  background:linear-gradient(90deg,#00f5ff,#8b5cf6);
+
+  color:white;
+
+  font-size:16px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.4s ease;
+}
+
+.project button:hover{
+  transform:translateY(-5px) scale(1.05);
+
+  background:linear-gradient(90deg,#ff3cac,#8b5cf6);
+}
+
+/* FADE ANIMATION */
+
+@keyframes fadeIn{
+
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .project{
+    margin:30px 15px;
+    padding:30px 20px;
+  }
+
+  .title{
+    font-size:28px;
+  }
+
+  .project h2{
+    font-size:22px;
+  }
+
+  .project p{
+    font-size:15px;
+  }
+
+  .project button{
+    width:100%;
+  }
+}

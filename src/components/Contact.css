@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+
+  background:
+  linear-gradient(rgba(10,5,25,0.75), rgba(10,5,25,0.75)),
+  url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1974&auto=format&fit=crop");
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  color:white;
+  min-height:100vh;
+}
+
+/* MAIN SECTION */
+
+.contact{
+  max-width:900px;
+  margin:60px auto;
+  padding:40px;
+
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.12);
+
+  border-radius:20px;
+  backdrop-filter:blur(16px);
+
+  text-align:center;
+
+  animation:fadeIn 1s ease;
+}
+
+/* TITLE */
+
+.title{
+  font-size:36px;
+  margin-bottom:10px;
+
+  background:linear-gradient(90deg,#00e5ff,#7b61ff,#ff4ecd);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* SUBTITLE */
+
+.subtitle{
+  font-size:16px;
+  color:#d9e7ff;
+  margin-bottom:30px;
+}
+
+/* CONTACT BOX */
+
+.contact-box{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:20px;
+}
+
+/* CARD */
+
+.contact-item{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.12);
+
+  padding:20px;
+  border-radius:15px;
+
+  backdrop-filter:blur(12px);
+
+  transition:0.3s;
+}
+
+.contact-item:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 30px rgba(0,229,255,0.2);
+}
+
+.contact-item h3{
+  font-size:16px;
+  margin-bottom:8px;
+
+  color:#00e5ff;
+}
+
+.contact-item p{
+  font-size:15px;
+  color:#eaeaea;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+  .contact{
+    margin:30px 15px;
+    padding:25px;
+  }
+
+  .title{
+    font-size:28px;
+  }
+}

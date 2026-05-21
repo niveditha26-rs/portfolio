@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.education{
+  max-width:1000px;
+
+  margin:60px auto;
+  padding:45px;
+
+  color:white;
+  font-family:'Poppins',sans-serif;
+
+  /* MORE TRANSPARENT */
+
+  background:rgba(255,255,255,0.03);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:25px;
+
+  backdrop-filter:blur(20px);
+
+  -webkit-backdrop-filter:blur(20px);
+
+  animation:fadeIn 1s ease;
+}
+
+/* TITLE */
+
+.edu-title{
+  font-size:38px;
+  font-weight:700;
+
+  text-align:center;
+
+  margin-bottom:40px;
+
+  background:linear-gradient(90deg,#00f5ff,#8b5cf6,#ff3cac);
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* EDUCATION CARD */
+
+.edu-card{
+
+  /* FULL GLASS TRANSPARENCY */
+
+  background:rgba(255,255,255,0.04);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  padding:28px;
+
+  margin-bottom:22px;
+
+  border-radius:20px;
+
+  backdrop-filter:blur(14px);
+
+  -webkit-backdrop-filter:blur(14px);
+
+  transition:0.4s ease;
+}
+
+/* HOVER EFFECT */
+
+.edu-card:hover{
+
+  transform:translateY(-8px);
+
+  background:rgba(255,255,255,0.07);
+}
+
+/* HEADING */
+
+.edu-card h3{
+  font-size:22px;
+  margin-bottom:8px;
+
+  font-weight:700;
+
+  color:#ffffff;
+}
+
+.edu-card h4{
+  font-size:17px;
+  font-weight:500;
+
+  color:#d1d5db;
+
+  margin-bottom:8px;
+}
+
+/* YEAR */
+
+.year{
+  font-size:15px;
+  font-weight:600;
+
+  margin-bottom:12px;
+
+  color:#00f5ff;
+}
+
+/* PARAGRAPH */
+
+.edu-card p{
+  font-size:16px;
+  line-height:1.8;
+
+  color:#f1f5f9;
+}
+
+/* FADE */
+
+@keyframes fadeIn{
+
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .education{
+    margin:30px 15px;
+    padding:30px 20px;
+  }
+
+  .edu-title{
+    font-size:30px;
+  }
+
+  .edu-card{
+    padding:22px;
+  }
+
+  .edu-card h3{
+    font-size:20px;
+  }
+
+  .edu-card h4{
+    font-size:15px;
+  }
+
+  .edu-card p{
+    font-size:14px;
+  }
+}

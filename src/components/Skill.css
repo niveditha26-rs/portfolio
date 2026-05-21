@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+
+  background:
+  linear-gradient(rgba(10,5,25,0.75), rgba(10,5,25,0.75)),
+  url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1974&auto=format&fit=crop");
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  color:white;
+  min-height:100vh;
+}
+
+/* MAIN SECTION */
+
+.skills{
+  max-width:900px;
+  margin:60px auto;
+  padding:40px;
+
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.12);
+
+  border-radius:20px;
+  backdrop-filter:blur(16px);
+
+  box-shadow:0 10px 40px rgba(0,0,0,0.3);
+
+  animation:fadeIn 1s ease;
+}
+
+/* TITLE */
+
+.title{
+  text-align:center;
+  font-size:38px;
+
+  margin-bottom:20px;
+
+  background:linear-gradient(90deg,#00e5ff,#7b61ff,#ff4ecd);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* DESCRIPTION */
+
+.skills p{
+  font-size:16px;
+  line-height:1.8;
+
+  color:#eaeaea;
+
+  margin-bottom:15px;
+}
+
+/* SUB HEADINGS */
+
+.skills h3{
+  font-size:18px;
+  margin-top:20px;
+  margin-bottom:8px;
+
+  color:#00e5ff;
+}
+
+/* SKILL LIST TEXT */
+
+.skills p{
+  font-size:15px;
+  color:#d9e7ff;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+  .skills{
+    margin:30px 15px;
+    padding:25px;
+  }
+
+  .title{
+    font-size:28px;
+  }
+
+  .skills h3{
+    font-size:16px;
+  }
+}
