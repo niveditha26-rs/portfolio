@@ -2,37 +2,37 @@ import React from "react";
 
 function Home() {
   return (
-    <section className="min-h-screen bg-[#dcdcdc] flex items-center justify-center px-6 py-10 overflow-hidden">
+    <section className="min-h-screen bg-[#dcdcdc] flex items-center justify-center px-4 sm:px-6 py-8 md:py-10 overflow-hidden">
 
       {/* MAIN CARD */}
-      <div className="relative bg-[#efefef] w-full max-w-7xl min-h-[85vh] shadow-2xl rounded-sm grid md:grid-cols-2 items-center px-10 md:px-20">
+      <div className="relative bg-[#efefef] w-full max-w-7xl min-h-[85vh] shadow-2xl rounded-2xl grid grid-cols-1 md:grid-cols-2 items-center px-6 sm:px-10 md:px-20 py-14">
 
         {/* LEFT YELLOW BAR */}
-        <div className="absolute left-0 top-24 w-8 h-56 bg-[#f5b932]"></div>
+        <div className="hidden md:block absolute left-0 top-24 w-8 h-56 bg-[#f5b932]"></div>
 
         {/* RIGHT YELLOW BAR */}
-        <div className="absolute right-0 top-24 w-8 h-56 bg-[#f5b932]"></div>
+        <div className="hidden md:block absolute right-0 top-24 w-8 h-56 bg-[#f5b932]"></div>
 
         {/* LEFT CONTENT */}
-        <div className="space-y-6 z-10">
+        <div className="space-y-6 z-10 text-center md:text-left">
 
           {/* SMALL TITLE */}
-          <div className="flex items-center gap-4 animate-slideLeft">
+          <div className="flex items-center justify-center md:justify-start gap-4 animate-slideLeft">
 
-            <div className="w-16 h-[4px] bg-[#f5b932] animate-line"></div>
+            <div className="w-12 md:w-16 h-[4px] bg-[#f5b932] animate-line"></div>
 
-            <p className="text-[#f5b932] text-3xl font-extrabold uppercase tracking-wide animate-bounceText">
+            <p className="text-[#f5b932] text-2xl sm:text-3xl font-extrabold uppercase tracking-wide animate-bounceText">
               HI THERE!!!
             </p>
 
           </div>
 
           {/* NAME */}
-          <h1 className="text-5xl md:text-7xl font-black uppercase leading-tight text-black animate-fadeUp">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black uppercase leading-tight text-black animate-fadeUp">
 
             I'M{" "}
 
-            <span className="text-transparent stroke-text animate-name">
+            <span className="text-transparent stroke-text animate-name block sm:inline">
               NIVEDITHA R S
             </span>
 
@@ -41,38 +41,38 @@ function Home() {
           {/* TAGS */}
           <div className="space-y-3">
 
-            <div className="inline-block bg-black text-[#f5b932] px-4 py-2 text-sm font-bold uppercase tracking-wide">
+            <div className="inline-block bg-black text-[#f5b932] px-4 py-2 text-xs sm:text-sm font-bold uppercase tracking-wide rounded-full">
               Diploma Computer Engineering Student
             </div>
 
             <br />
 
-            <div className="inline-block bg-black text-[#f5b932] px-4 py-2 text-sm font-bold uppercase tracking-wide">
+            <div className="inline-block bg-black text-[#f5b932] px-4 py-2 text-xs sm:text-sm font-bold uppercase tracking-wide rounded-full">
               Ready To Build Modern Websites
             </div>
 
           </div>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-600 leading-8 max-w-md text-sm md:text-base">
+          <p className="text-gray-600 leading-7 sm:leading-8 max-w-md text-sm md:text-base mx-auto md:mx-0">
             Passionate about Web Development, UI Design and creating responsive modern websites using React and Tailwind CSS.
           </p>
 
           {/* BUTTON */}
-          <button className="bg-black text-white px-8 py-4 rounded-full uppercase font-semibold tracking-wide hover:bg-[#f5b932] hover:text-black transition duration-500 hover:scale-105">
+          <button className="bg-black text-white px-7 sm:px-8 py-3 sm:py-4 rounded-full uppercase text-sm sm:text-base font-semibold tracking-wide hover:bg-[#f5b932] hover:text-black transition duration-500 hover:scale-105">
             More About Me
           </button>
 
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative flex justify-center items-center mt-16 md:mt-0">
+        <div className="relative flex justify-center items-center mt-14 md:mt-0">
 
           {/* CIRCLE OUTLINE */}
-          <div className="absolute w-[420px] h-[420px] border-[3px] border-[#f5b932] rounded-full animate-spinSlow"></div>
+          <div className="absolute w-[260px] h-[260px] sm:w-[340px] sm:h-[340px] md:w-[420px] md:h-[420px] border-[3px] border-[#f5b932] rounded-full animate-spinSlow"></div>
 
           {/* IMAGE */}
-          <div className="w-[320px] h-[320px] md:w-[380px] md:h-[380px] rounded-full overflow-hidden shadow-2xl z-10 animate-imageFloat">
+          <div className="w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] md:w-[380px] md:h-[380px] rounded-full overflow-hidden shadow-2xl z-10 animate-imageFloat">
 
             <img
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop"
@@ -120,19 +120,15 @@ function Home() {
             0% {
               transform: translateY(0);
             }
-
             25% {
               transform: translateY(-8px);
             }
-
             50% {
               transform: translateY(0);
             }
-
             75% {
               transform: translateY(-4px);
             }
-
             100% {
               transform: translateY(0);
             }
@@ -147,7 +143,6 @@ function Home() {
             from {
               width: 40px;
             }
-
             to {
               width: 80px;
             }
@@ -210,11 +205,9 @@ function Home() {
             0% {
               transform: translateY(0px);
             }
-
             50% {
               transform: translateY(-15px);
             }
-
             100% {
               transform: translateY(0px);
             }
