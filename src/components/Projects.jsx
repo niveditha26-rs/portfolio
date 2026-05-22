@@ -67,6 +67,8 @@ function Project() {
 
             </div>
 
+            
+
             {/* TECH STACK */}
             <div>
 
@@ -83,6 +85,43 @@ function Project() {
                 <span className="tech-badge">Tailwind CSS</span>
 
               </div>
+
+            </div>
+             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6">
+                Coastal Tourism
+              </h2>
+            <div>
+
+              <h3 className="text-xl sm:text-2xl font-bold text-black mb-5">
+                Solution
+              </h3>
+
+              <p className="text-gray-600 leading-8 sm:leading-9 text-base sm:text-lg">
+                The proposed solution is a district-based digital platform that
+                connects tourists with local coastal services such as guides,
+                homestays and activities. It improves visibility for small tourism
+                operators and provides a centralized system for users. The platform
+                uses Artificial Intelligence for personalized recommendations,
+                translation and route planning.
+              </p>
+
+            </div>
+
+            {/* WORKING */}
+            <div>
+
+              <h3 className="text-xl sm:text-2xl font-bold text-black mb-5">
+                Working
+              </h3>
+
+              <p className="text-gray-600 leading-8 sm:leading-9 text-base sm:text-lg">
+                The system organizes services district-wise, allowing users to find
+                nearby options easily. Tourists can search, view and book services
+                through the platform. AI analyzes user preferences to suggest
+                suitable activities and services. It also provides translation
+                support and GPS navigation. Service providers can register and list
+                their services, making them accessible to more users.
+              </p>
 
             </div>
 

@@ -55,37 +55,7 @@ function Education() {
 
           </div>
 
-          {/* CARD 2 */}
-          <div className="relative pl-8 sm:pl-10">
-
-            {/* DOT */}
-            <div className="absolute -left-[14px] sm:-left-[18px] top-2 w-6 h-6 sm:w-8 sm:h-8 bg-[#f5b932] rounded-full border-4 border-[#efefef]"></div>
-
-            {/* CONTENT */}
-            <div className="bg-white p-5 sm:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2">
-
-              <p className="text-xs sm:text-sm uppercase tracking-[3px] text-[#f5b932] font-bold mb-3">
-                2022 - 2024
-              </p>
-
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-black mb-3 leading-tight">
-                Higher Secondary Education
-              </h2>
-
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-700 mb-5 leading-7">
-                Kerala State Board
-              </h3>
-
-              <p className="text-gray-600 leading-7 sm:leading-8 text-sm sm:text-base">
-                Completed higher secondary education with focus on
-                computer science and mathematics while developing
-                interest in programming and web technologies.
-              </p>
-
-            </div>
-
-          </div>
-
+          
         </div>
 
       </div>
